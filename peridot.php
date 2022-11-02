@@ -10,4 +10,3 @@ return function (EventEmitterInterface $eventEmitter) {
 
     new ProphecyPlugin($eventEmitter);
 };
-

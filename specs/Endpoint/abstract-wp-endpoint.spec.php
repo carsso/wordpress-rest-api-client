@@ -47,7 +47,6 @@ describe(AbstractWpEndpoint::class, function () {
             $data = $endpoint->get(null, ['bar'=>'baz']);
             expect($data)->to->equal(['foo' => 'bar']);
         });
-
     });
 
     describe('save()', function () {
@@ -68,8 +67,10 @@ describe(AbstractWpEndpoint::class, function () {
     });
 });
 
-class FakeEndpoint extends AbstractWpEndpoint {
-    public function getEndpoint() {
+class FakeEndpoint extends AbstractWpEndpoint
+{
+    public function getEndpoint()
+    {
         return '/foo';
     }
 }

@@ -45,5 +45,5 @@ print_r($user);
 ## Testing
 ```bash
 composer install
-vendor/bin/peridot
+vendor/bin/phpunit
 ```

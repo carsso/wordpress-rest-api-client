@@ -6,14 +6,7 @@
             <property name="lineLimit" value="180"/>
         </properties>
     </rule>
-    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
-        <exclude-pattern>specs/*</exclude-pattern>
-    </rule>
-    <rule ref="PSR1.Files.SideEffects.FoundWithSymbols">
-        <exclude-pattern>specs/*</exclude-pattern>
-    </rule>
     <file>src</file>
-    <file>specs</file>
-    <file>peridot.php</file>
+    <file>tests</file>
     <arg name="encoding" value="utf-8"/>
 </ruleset>
